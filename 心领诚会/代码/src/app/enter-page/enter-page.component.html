@@ -1,0 +1,24 @@
+<div id="window">
+  <div id="cnt">
+    <div id="left">
+        <div id="return" (click)='toPage("self")'>
+            <img src="assets/img/return.png" alt="">
+            <a href="#">返回上一级</a>
+        </div>
+    </div>
+    <div id="center">
+        <img src="assets/img/logo.png" alt="">
+        <button id="add" (click)='showEnterWindow()'>加入会议</button>
+        <button>创建会议</button>
+    </div>
+    <div id="right"></div>
+</div>
+
+
+<div id="enter_window">
+    <span>请输入您的与会密钥</span>
+    <input type="text" placeholder="请输入您的与会密钥">
+    <button id="into" (click)='toPage("meeting")'>进入</button>
+    <button id="cancel" (click) = 'hideEnterWindow()'>取消</button>
+</div>
+</div>

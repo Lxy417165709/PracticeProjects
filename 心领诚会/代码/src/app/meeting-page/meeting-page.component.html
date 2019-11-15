@@ -1,0 +1,85 @@
+<div id='outerWindow'>
+  <div id="window">
+
+    <div id="navigation">
+  
+        <div id="logo_window">
+            <img src="assets/img/logo.png" alt="">
+            <span>会议设施面板</span>
+        </div>
+  
+    </div>
+    <div id="cnt">
+        <div id="left">
+            <div id="menu">
+                <div id="up">
+                    <div >
+                        <span>画面录制</span>
+                    </div>
+                    <div >
+                        <span>开启话筒</span>
+                    </div>
+                </div>
+                <div id="center">
+                    <div >
+                        <span>音量调节</span>
+                    </div>
+                    <div >
+                        <span>外置设备</span>
+                    </div>
+                </div>
+                <div id="down">
+                    <div id="openIt">
+                        <span>功能</span>
+                    </div>
+                    <div >
+                        <span>翻译器</span>
+                    </div>
+                </div>
+  
+            </div>
+            <div class="person_class">
+                <div class="head">
+                    <span>与会人员列表</span>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <img src="assets/img/WuYZ.jpg" alt="">
+                        <div class="person">
+                            <div class = "person_up">
+                                <a class="person_name">吴彦祖</a>
+                                <a class="person_time">禁言</a>
+                            </div>
+                            <div class = "person_down">
+                                <a class="person_cnt">宝贝吃饭没有啊!</a>
+                            </div>
+  
+  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="foot">
+                <button id="out" (click)='toPage("enter")'>退出</button>
+            </div>
+  
+        </div>
+        <div id="right">
+            <div class="video_class">
+                <video src="assets/img/126.mp4" id="video"  controls >
+                </video>
+                <div>
+                    <img src="assets/img/wjj.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/img/bj.png"  alt="">
+                </div>
+                <!-- <span id="loading">正在加载...</span> -->
+                <canvas id="renderCanvas" width="500" height="500"></canvas>
+            </div>
+  
+        </div>
+  
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+
+
+
+<div class='divNavigateBar'>
+  <div class='left'></div>
+  <div class='right'>
+    <div class='selfInfo'>
+        <img [src] = "common.userPersonalInformation.userPhotoUrl===undefined?'assets/img/default.jpg':common.userPersonalInformation.userPhotoUrl" alt="" class='picture' routerLink="/personalInformation">
+        <span class='name'>{{common.userPersonalInformation.userName}}</span>
+    </div>
+    <div class='option'>
+        <img src="assets/img/exit.ico" alt="" class='exit' (click)='exit()'>
+    </div>
+  </div>
+</div>
+
+<!-- 背景 -->
+<div class='divBackground' ></div>
+
+
+<div class='divContent'>
+
+  <div class='center'>
+    <div class='showImg'>
+        <img src="/assets/img/she.jpg" alt="">
+        <p>回眸一笑百魅生，六宫粉黛无颜色。</p>
+    </div>
+  </div>
+
+</div>
+

@@ -1,0 +1,350 @@
+* {
+
+    font-family:"白鸽天行体";
+}
+
+@font-face {
+    font-family: '白鸽天行体';     /* 这个名字可以自己定义 */
+    src: url('../../assets/fonts/字魂50号-白鸽天行体.ttf'); /* IE9 Compat Modes */
+}
+
+#outerWindow{
+    width: 100%;
+    height:100%;
+    background-image: url('../../assets/img/bg5.jpg');
+    background-size: cover;
+}
+
+#window{
+    width: 1216px;
+    height: 700px;
+    /*background-color: #58ff4e;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: #2a2a2a 0 0 30px;
+    animation: topToBottemfadeIn 1.5s 0s ease-in-out;
+
+}
+@keyframes topToBottemfadeIn {
+    0%{
+        top:-500px;
+        opacity: 0;
+    }
+    100%{
+        top:0;
+        opacity: 1;
+    }
+}
+
+
+
+#window #navigation{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top right, #a32b0b, #ab4e33);
+    line-height: 50px;
+
+}
+#window #navigation #logo_window{
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    position: relative;
+    padding-left: 42px;
+    
+}
+#window #navigation #logo_window img{
+    width: 48px;
+    margin-top: 7px;
+    float: left;
+}
+#window #navigation #logo_window span{
+    color: white;
+    font-size: 23px;
+    padding-left: 15px;
+    padding-top: 2px;
+    display: inline-block;
+}
+
+
+#window #left{
+    height: 650px;
+    width: 240px;
+    float: left;
+    background-color: white;
+}
+#window #left #menu{
+    width: 100%;
+    height: 270px;
+    background:url("../../assets/img/p1.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#window #left #menu>div{
+    height: 80px;
+    width: 100%;
+
+    /*background-color: #fff;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+#window #left #menu>div>div{
+    height: 60px;
+    width: 100px;
+
+    background: linear-gradient(to bottom, #9a4416, #c77148);
+    /*border-radius: 50%;*/
+    text-align: center;
+    line-height: 60px;
+}
+
+#window #left #menu>div>div>span{
+    font-size: 23px;
+    color: white;
+}
+
+#window #left #foot{
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to top right, #bd3e14, #e19366);
+    /*background-color: #ffc920;*/
+    position: relative;
+    /*background-image: ;*/
+}
+#window #left #foot button{
+    height: 35px;
+    width: 65%;
+    border: none;
+    font-size: 25px;
+    border-radius:5px ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: black 0 0 10px;
+}
+#window #right{
+    height: 650px;
+    width: 976px;
+    float: left;
+    background-color: #000000;
+}
+
+
+.video_class{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /*padding: 5px;*/
+    box-sizing: border-box;
+}
+
+
+.video_class video{
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+.video_class>div{
+    width: 70px;
+    height: 70px;
+    /*background-color: #ff1f28;*/
+    position: absolute;
+
+}
+.video_class>div:nth-of-type(1){
+    right: 30px;
+    bottom: 180px;
+
+}
+.video_class>div:nth-of-type(2){
+    right: 30px;
+    bottom: 100px;
+}
+.video_class canvas{
+    position: absolute;
+    bottom: 70px;
+    left:0;
+    animation: canvasAnimation 2s 10s ease-in-out forwards;
+    opacity: 0;
+
+}
+@keyframes canvasAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*.video_class>div:nth-of-type(3){*/
+    /*left: 100px;*/
+    /*top:100px;*/
+/*}*/
+/*.video_class>div:nth-of-type(3) >img{*/
+    /*width: 120px;*/
+    /*height: 150px;*/
+/*}*/
+/*.video_class>div:nth-of-type(4){*/
+    /*left: 100px;*/
+    /*top:250px;*/
+/*}*/
+/*.video_class>div:nth-of-type(4) >img{*/
+    /*width: 120px;*/
+    /*height: 120px;*/
+/*}*/
+/*.video_class>div:nth-of-type(5){*/
+    /*left: 100px;*/
+    /*top:400px;*/
+/*}*/
+/*.video_class>div:nth-of-type(5) >img{*/
+    /*width: 120px;*/
+    /*height: 120px;*/
+/*}*/
+
+.video_class>div>img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 60px;
+}
+/*.video_class>div:nth-of-type(3){*/
+    /*right: 30px;*/
+    /*bottom: 20px;*/
+/*}*/
+
+.person_class{
+    width: 100%;
+    height: 330px;
+}
+.person_class .head{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    background: linear-gradient(to top right, #bd3e14, #e19366);
+    /*background-color: #d297ff;*/
+}
+.person_class .list{
+    height: 290px;
+    width: 100%;
+    border-bottom: 1px solid #050202;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    position: relative;
+}
+
+
+.item{
+    width: 100%;
+    height: 60px;
+    /*background-color: #ff7b33;*/
+    border-bottom: solid 1px #6a6a6a;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item img{
+    width: 50px;
+    height: 50px;
+
+    top:5px;
+    left: 5px;
+
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+}
+.item .person{
+    width: 78%;
+    height: 60px;
+
+    /*background-color:yellow;*/
+    right:4px;
+    /*top:15px;*/
+
+    /*border-bottom: rgb(200,200,200) 1px solid;*/
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-around;
+    /*align-items: center;*/
+    box-sizing: border-box;
+
+}
+
+.item .person .person_up{
+    height: 28px;
+}
+.item .person .person_up .person_name{
+    /*width: 100px;*/
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 28px;
+    display: block;
+    float: left;
+    /*background-color: #ffd617;*/
+    color: black;
+    font-size: 16px;
+    line-height: 28px;
+}
+.item .person .person_up .person_time{
+    margin-right: 2px;
+    /*width: 100px;*/
+    height: 28px;
+    /*background-color: #57ff2e;*/
+    float: right;
+    color: #555555;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+}
+
+
+.item .person .person_down{
+    height: 28px;
+
+    line-height: 28px;
+    /*width: 100%;*/
+    /*background-color: #aaff4f;*/
+}
+.item .person .person_cnt{
+    color: #555555;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#loading{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    z-index: 10;
+}

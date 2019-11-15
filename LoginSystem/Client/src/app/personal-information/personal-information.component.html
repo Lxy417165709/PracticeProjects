@@ -1,0 +1,56 @@
+
+
+<div class='selfInfoWindow' [style.display]="isSelectingPicture?'none':'flex'">
+    <div class='close'>
+      <img src='assets/img/close.ico' alt="" routerLink="/home">
+    </div>
+    <!-- <button nz-button [nzType]="'primary'">测试按钮</button> -->
+    <div class='imgItem'>
+        <div class='imgUnit'>
+            <!-- 头像这还是有问题的，因为这只是巧合(存储在服务器的路径和Angular的路径是一样的) -->
+            <img [src]="common.userPersonalInformation.userPhotoUrl===undefined?'assets/img/default.jpg':common.userPersonalInformation.userPhotoUrl"  alt="" (click)='openSelectPictureWindow()'>
+        </div>
+    </div>
+    
+    <!-- /*
+    <div class='inputUnit'>
+      <input type="text" placeholder="账号" class="inputUsername" [(ngModel)]='loginForm.loginUsername'/>
+      <img [src]="common.getIcoUrl(common.checkUsername(loginForm.loginUsername))" alt="">
+    </div>
+    */ -->
+    <div class='item'>
+      <div class='tip'>用户名:</div>
+      <input type="text" class='name' [(ngModel)]='common.userPersonalInformation.userName' placeholder="用户名">
+      <img [src]='common.getIcoUrl(common.checkPersonalName(common.userPersonalInformation.userName))' alt="">
+    </div>
+    <div class='item'>
+      <div class='tip'>性别:</div>
+      <input type="text" class='sex' [(ngModel)]='common.userPersonalInformation.userSex'  placeholder="性别" >
+      <img [src]='common.getIcoUrl(common.checkPersonalSex(common.userPersonalInformation.userSex))' alt="">
+    </div>
+    <div class='item'>
+      <div class='tip'>生日:</div>
+      <input type="date" class='birthday' [value]='common.timestampToTimeString(common.userPersonalInformation.userBirthday)' (change)='listenUserBirthdayChanged($event)'>
+      <img [src]='common.getIcoUrl(common.checkPersonalBirthday(common.userPersonalInformation.userBirthday))' alt="">
+    </div>
+    <div class='item'>
+      <div class='tip'>手机:</div>
+      <input type="text" class='phone' [(ngModel)]='common.userPersonalInformation.userContactPhone' placeholder="手机" >
+      <img [src]='common.getIcoUrl(common.checkPhone(common.userPersonalInformation.userContactPhone))' alt="">
+    </div>
+    <div class='item'>
+      <div class='tip'>邮箱:</div>
+      <input type="text" class='email' [(ngModel)]='common.userPersonalInformation.userContactEmail' placeholder="邮箱" >
+      <img [src]='common.getIcoUrl(common.checkEmail(common.userPersonalInformation.userContactEmail))' alt="">
+    </div>
+    <div class='option'>
+      <button (click)='askForChangingUserPersonalInformation()'>修改</button>
+    </div>
+  </div>
+  <!-- 这是子组件，用于上传图片 -->
+  <app-picture-upload-tool (emitter)='getMsgFromSon($event)' [style.display]="openState===1?'inherit':'none'"></app-picture-upload-tool> 
+  
+  
+  
+  
+  

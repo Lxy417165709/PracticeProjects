@@ -1,0 +1,8 @@
+
+// 用户账户信息结构体
+type UserAccountInformation struct {
+	UserId int64 `json:"userId"`
+	UserPhone string `json:"userPhone"`
+	UserEmail string `json:"userEmail"`
+	UserPassword string `json:"userPassword"`
+}

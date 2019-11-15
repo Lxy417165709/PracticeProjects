@@ -1,0 +1,25 @@
+
+.divBackground{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.tip{
+    height: 20%;
+    min-height: 50px;
+    width: 100%;
+    min-width: 300px;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 3em;
+    color: rgb(209, 14, 14);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    
+}

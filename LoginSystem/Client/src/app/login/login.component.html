@@ -1,0 +1,19 @@
+      
+<div class="background"></div>
+<div class="windowLogin">
+  <div class='imgUnit'>
+      <img src="assets/img/default.jpg"  alt="">  
+      <!-- <img [src]="assets/img/default.jpg"  alt="">   原来是这样的，但是会报错--> 
+      <!-- 这 /assets/img 应该可以提取出来做为一个常量，表示图片文件夹的默认路径 -->
+  </div>
+  <div class='inputUnit'>
+    <input type="text" placeholder="账号" class="inputUsername" [(ngModel)]='loginForm.loginUsername'/>
+    <img [src]="common.getIcoUrl(common.checkUsername(loginForm.loginUsername))" alt="">
+  </div>
+  <div class='inputUnit'>
+    <input type="password" placeholder="密码" class="inputPassword" [(ngModel)]='loginForm.loginPassword'/>
+    <img [src]="common.getIcoUrl(common.checkPassword(loginForm.loginPassword))" alt="">
+  </div>
+  <button class="buttonLogin" (click)='askForLogin()'>登 录</button>
+  <button class="buttonGoToRegister" routerLink="/register">我还没有账号~</button>
+</div>

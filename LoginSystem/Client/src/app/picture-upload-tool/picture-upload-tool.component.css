@@ -1,0 +1,74 @@
+
+
+
+.toolWindow{
+
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; */
+    width: 100%;
+    /* height: 700px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240,240,240);
+    border-radius: 5%;
+    box-shadow: 0px 10px 60px 0px rgba(0,0,0,0.5)
+    
+}
+
+.toolWindow .close{
+    /* background-color: rgb(180, 30, 30); */
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    width: 60px;
+    height: 60px;
+}
+.toolWindow .close img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.toolWindow .imgUnit{
+    width:50%;
+    height:0px;
+    padding-bottom:50%;
+    position:relative;
+    margin: 5%;
+
+}
+.toolWindow .imgUnit img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 30px black;
+
+}
+
+.toolWindow .inputUnit{
+    width: 100%;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-bottom: 10px;
+}
+
+.toolWindow .inputUnit input{
+    width: 70%;
+    font-size: 1.5em;
+   
+}
+
+.toolWindow .inputUnit button{
+    width: 20%;
+    font-size: 1.5em;
+}

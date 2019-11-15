@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HuangShan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        body{
+            background-color: #000;
+        }
+        #box1,#box2{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+            filter: blur(5px);
+            background-size: cover;
+        }
+
+        #box1{
+            opacity: 1;
+            background-image: url("img/pc0.jpeg");
+        }
+        #box2{
+            opacity: 0;
+
+        }
+        #showWindow{
+            width: 1500px;
+            height: 750px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+            box-shadow: black 0 0 20px;
+            border-radius: 10px;
+            animation: anm 3s ease-in-out;
+        }
+        @keyframes anm {
+            0%{
+                opacity: 0;
+                top: -500px;
+            }
+            100%{
+                opacity: 1;
+                top: 0;
+            }
+        }
+        #showWindow>img{
+            width: 80px;
+            height: 80px;
+            /*background-color: #6eff3f;*/
+            z-index: 1;
+            opacity: 0.5;
+            cursor: pointer;
+            transition: opacity 1s;
+        }
+        #showWindow>img:hover{
+
+            opacity: 1;
+        }
+        /*@keyframes hoverAnimation  {*/
+            /*0*/
+        /*}*/
+        #showWindow #left{
+
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            bottom: 0;
+
+        }
+        #showWindow #right{
+
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+        #showWindow ul{
+            width: 1000000px;
+            height: 750px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            /*left: 0;*/
+            bottom: 0;
+            /*right: 0;*/
+            /*background-color: #fdff64;*/
+            list-style: none;
+            /*transition: all 1s;*/
+        }
+
+
+
+        #showWindow ul li{
+            width: 1500px;
+            height: 750px;
+            float: left;
+            opacity: 0.5;
+            position: relative;
+        }
+
+        #showWindow ul li:first-child{
+            opacity: 1;
+        }
+        #showWindow ul li img{
+            position: absolute;
+            left:0;
+            width: 1000px;
+
+
+        }
+        #showWindow ul li div{
+            position: absolute;
+            right:0;
+            width: 500px;
+            height: 750px;
+            background-color: rgba(255,255,255,0.4);
+            /*padding: 10px;*/
+            opacity: 0;
+
+            box-sizing: border-box;
+            animation: anm2 1s 3s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes anm2 {
+            0%{
+                opacity: 0;
+
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        #showWindow ul li div .text{
+            width: 450px;
+            height: 700px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255,255,255,0.4);
+            border-radius: 1px;
+            box-shadow: rgba(0,0,0,0.4) 0 0 20px;
+        }
+        #showWindow ul li div .text .topic{
+            width: 400px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+
+            height: 50px;
+            line-height: 50px;
+            position: absolute;
+            display: inline-block;
+            margin: auto;
+            top: 10px;
+            left: 0;
+            right: 0;
+            /*bottom: 0;*/
+        }
+        #showWindow ul li div .text .cnt{
+            /*text-align: left;*/
+            font-size: 28px;
+            font-weight: bolder;
+            width: 400px;
+            height: 640px;
+            line-height: 35px;
+            position: absolute;
+            display: inline-block;
+            margin: auto;
+            top: 65px;
+            left: 0;
+            right: 0;
+            text-indent: 1em;
+            text-align: justify;
+            word-break: break-all;
+
+            /*bottom: 0;*/
+        }
+        #showWindow #page{
+            width: 200px;
+            height: 30px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            /*opacity: 0.5;*/
+            margin: auto;
+            position: absolute;
+
+            right: 0;
+            left: 0;
+            bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            font-weight: bolder;
+
+        }
+        #showWindow #page div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #a7a1ab;
+            /*background-color: #43ffeb;*/
+            cursor: pointer;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        
+
+        .select{
+
+            background-color: #6781ff !important;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box1">
+
+</div>
+<div id="box2">
+
+</div>
+<div id="showWindow">
+    <img src="img/left.png" alt="" id="left">
+    <img src="img/right.png" alt="" id="right">
+    <ul id="ul">
+        <li>
+            <img src="img/pc0.jpeg" alt="">
+            <div>
+                <div class="text">
+                    <span class="topic">Greeting Pine(迎客松)</span>
+                    <p class="cnt">
+                        It is over 800 years old and is famous for its branch which is like human's hand.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="img/pc1.jpeg" alt="">
+            <div>
+                <div class="text">
+                    <span class="topic">Pen Pine(梦笔生花)</span>
+                    <p class="cnt">
+                        It is a pine tree that grows at the pine.The name of this tree is related to a poet, Li Bai.You can learn about its story if you are interested.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="img/pc2.jpeg" alt="">
+            <div>
+                <div class="text">
+                    <span class="topic">Beautiful view 1</span>
+                    <p class="cnt">
+                        It is a photo I shot when I was climbing the mountain. I don't know where I shot it.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="img/pc3.jpeg" alt="">
+            <div>
+                <div class="text">
+                    <span class="topic">Beautiful view 2</span>
+                    <p class="cnt">
+                        It is a photo I shot when I was climbing the mountain. I don't know where I shot it.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="img/pc4.jpeg" alt="">
+            <div>
+                <div class="text">
+                    <span class="topic">Beautiful view 3</span>
+                    <p class="cnt">
+                        It is a photo I shot when I was climbing the mountain. I don't know where I shot it.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="img/pc5.jpeg" alt="">
+            <div>
+                <div class="text">
+                    <span class="topic">Stream</span>
+                    <p class="cnt">
+                       I shot this photo near the foot of the mountain. I love the clear water of this stream and  its quietness.
+                    </p>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <div id="page">
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+
+    $(document).ready(function(){
+        var leftBtn = $("#left");
+        var rightBtn = $("#right");
+        var ulWindow = $("#ul");
+        var pageSelector = $("#page");
+        var box1 = $("#box1");
+        var box2 = $("#box2");
+        var time = 0;
+        var currentIndex=0;
+        var unit = 1500;
+        function bgiChange() {
+            if(time%2===0){
+                box1.animate({
+                    opacity:0
+                },750);
+                box2.css("background-image","url(img/pc"+ currentIndex + ".jpeg)");
+                box2.animate({
+                    opacity:1
+                },750);
+
+            }else{
+                box2.animate({
+                    opacity:0
+                },750);
+                box1.css("background-image","url(img/pc"+ currentIndex + ".jpeg)");
+                box1.animate({
+                    opacity:1
+                },750);
+
+            }
+            time++;
+        }
+        function change(obj) {
+            ulWindow.stop();
+            $(ulWindow.children()[currentIndex]).stop();
+
+            $(pageSelector.children()[currentIndex]).removeClass("select");
+            $(ulWindow.children()[currentIndex]).animate({
+                opacity:"0.5"
+            },1500);
+
+            currentIndex = Number(obj.attr("index"));
+            $(ulWindow.children()[currentIndex]).stop();
+            ulWindow.animate({
+                left:-currentIndex*unit
+
+            },1500);
+            $(ulWindow.children()[currentIndex]).animate({
+                opacity:"1"
+            },1500);
+            $(pageSelector.children()[currentIndex]).addClass("select");
+
+            bgiChange()
+
+        }
+        function arrowClickChange(flag) {
+
+            if(flag===0){
+                if(currentIndex >= ulWindow.children().length - 1)return;
+            }else{
+                if(currentIndex <= 0)return;
+            }
+            console.log(currentIndex);
+            $(pageSelector.children()[currentIndex]).removeClass("select");
+            $(ulWindow.children()[currentIndex]).stop();
+            $(ulWindow.children()[currentIndex]).animate({
+                opacity:"0.5"
+            },1500);
+
+
+
+
+
+            if(flag===0){
+                currentIndex +=1;
+            }else{
+                currentIndex -=1;
+            }
+
+
+
+            ulWindow.stop();
+            ulWindow.animate({
+                left:-currentIndex*unit,
+            },1500);
+            $(ulWindow.children()[currentIndex]).stop();
+            $(ulWindow.children()[currentIndex]).animate({
+                opacity:"1"
+            },1500);
+
+
+
+            $(pageSelector.children()[currentIndex]).addClass("select");
+
+
+
+            bgiChange();
+
+
+
+        }
+
+
+        for(var i=0;i<ulWindow.children().length;i++){
+
+            var div=$("<div></div>");
+
+            div.text(i);
+            div.attr("index",i);
+            div.removeClass("select");
+            div.click(function () {
+                change($(this));
+            });
+            console.log(div);
+            pageSelector.append(div);
+
+
+        }
+
+        $(pageSelector.children()[currentIndex]).addClass("select");
+
+        rightBtn.click(function () {
+            arrowClickChange(0);
+
+        });
+        leftBtn.click(function () {
+            arrowClickChange(1);
+        });
+
+
+
+    })
+</script>
+
+</body>
+</html>

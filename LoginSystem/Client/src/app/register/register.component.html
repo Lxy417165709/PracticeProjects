@@ -1,0 +1,20 @@
+<div class="registerWindow">
+    <div class='inputUnit'>
+      <input type="text" class="inputPhone" placeholder="手机" [(ngModel)]='registerInformation.registerPhone' >
+      <img [src]="common.getIcoUrl(common.checkPhone(registerInformation.registerPhone))" alt="">
+    </div>
+    <div class='inputUnit'>
+      <input type="text" class="inputEmail" placeholder="邮箱" [(ngModel)]='registerInformation.registerEmail' >
+      <img [src]="common.getIcoUrl(common.checkEmail(registerInformation.registerEmail))" alt="">
+    </div>
+    <div class='inputUnit'>
+      <input type="password" class="inputPassword" placeholder="密码" [(ngModel)]='registerInformation.registerPassword' >
+      <img [src]="common.getIcoUrl(common.checkPassword(registerInformation.registerPassword))" alt="">
+  </div>
+    <div class='inputUnit'>
+        <input type="password" class="inputRepeatPassword" placeholder="重复密码" [(ngModel)]='registerInformation.registerRepeatPassword' >
+        <img [src]="common.getIcoUrl(common.checkPassword(registerInformation.registerRepeatPassword))" alt="">
+    </div>
+    <button class="buttonRegister" (click)='askForRegister()'>注 册</button>
+    <button class="buttonToLogin" routerLink="/login">我已经有账号了~</button>
+  </div>

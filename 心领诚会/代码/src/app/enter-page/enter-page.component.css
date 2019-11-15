@@ -1,0 +1,164 @@
+* {
+
+    font-family:"白鸽天行体";
+}
+
+@font-face {
+    font-family: '白鸽天行体';     /* 这个名字可以自己定义 */
+    src: url('../../assets/fonts/字魂50号-白鸽天行体.ttf'); /* IE9 Compat Modes */
+}
+#window{
+    width: 100%;
+    height:100%;
+    background-image: url("../../assets/img/bg3.png");
+    background-size: cover;
+}
+#cnt{
+    width: 1000px;
+    height: 100%;
+    /*background-color: #ffa82f;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#cnt div{
+    width: 32%;
+    height: 100%;
+    /*background-color: #fff;*/
+    position:relative;
+}
+
+#cnt #left #return{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+
+    animation: opctFadeIn 0.5s 1s ease-in-out forwards;
+    cursor: pointer;
+
+}
+
+#cnt #left #return img{
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+}
+#cnt #left #return a{
+    display: block;
+    width: 150px;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+#cnt #center{
+    animation: opctAndTopFadeIn 1s 0s ease-in-out;
+}
+
+@keyframes opctAndTopFadeIn {
+    0%{
+        top: -100px;
+        opacity: 0.0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes opctFadeIn {
+    0%{
+        /*right: -500px;*/
+        opacity: 0.0;
+    }
+    100%{
+        /*right: 150px;*/
+        opacity: 1;
+    }
+}
+#cnt #center img{
+    width: 280px;
+    margin-top:160px;
+    position: relative;
+    left: 10px;
+}
+
+
+
+#cnt #center button{
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    background-color: #e85700;
+    box-shadow: black -10px 10px 50px;
+
+}
+
+#enter_window{
+    width: 450px;
+    height: 260px;
+
+    margin: auto;
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../../assets/img/window.png");
+    text-align: center;
+    box-shadow: black 0 0 30px;
+    border-radius: 10px;
+    /*opacity: 0;*/
+    display: none;
+}
+
+#enter_window span{
+    margin-top:40px ;
+    font-size: 30px;
+    color:white;
+    display: block;
+    text-shadow: #e85700 -5px 5px 5px;
+}
+#enter_window input{
+    margin-top: 20px;
+    width: 300px;
+    height: 35px;
+    font-size: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px
+
+}
+#enter_window button{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 120px;
+    height: 35px;
+    font-size: 25px;
+    border-radius: 10px;
+    
+    border: none;
+    box-shadow: #1f1f1f 0px 0px 10px;
+    /*box-shadow: #e85700 0 0 20px;*/
+
+}

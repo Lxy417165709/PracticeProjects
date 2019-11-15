@@ -1,0 +1,123 @@
+
+
+.divNavigateBar{
+    width: 100%;
+    min-width: 500px;
+    height: 60px;
+    background: rgb(1, 20, 128);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 0 15px black;
+}
+
+.divNavigateBar .left{
+    flex-grow: 4;
+    height: 100%;
+    /* line-height: 100%; */
+    background-color: #3498db;
+    
+
+}
+.divNavigateBar .right{
+    flex-grow: 0.5;
+    min-width: 195px;
+    height: 100%;
+    background-color: #ff6666;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.divNavigateBar .right .selfInfo{
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+
+.divNavigateBar .right .selfInfo .picture{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    /* margin-left:10px; */
+    margin: 0 10px;
+    cursor: pointer;
+}
+.divNavigateBar .right .selfInfo .name{
+    font-size: 1.5em;
+    
+    font-weight: bold;
+    cursor: pointer;
+    color:white;
+}
+.divNavigateBar .right .option{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divNavigateBar .right .option .exit{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    color:#002d75;
+}
+
+
+.divBackground{
+    width: 100%;
+    height: 905px;
+    position: absolute;
+    z-index: -1;
+    background-image: url('/assets/img/she.jpg');
+    background-size: cover;
+    filter: blur(5px);
+}
+
+
+.divContent {
+    margin-top: 60px;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divContent .center{
+    height: 880px;
+    width: 95%;
+    min-width: 1200px;
+    background-color: rgba(255,255, 255,0.2);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.divContent .center .showImg{
+    text-align: center;
+}
+.divContent .center .showImg img{
+    width: 1200px;
+    border-radius: 10px;
+    box-shadow: black 0 0 17px;
+    display: block;
+}
+.divContent .center .showImg p{
+    color:rgb(32, 15, 0);
+    display: block;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
