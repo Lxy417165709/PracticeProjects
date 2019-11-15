@@ -1,3 +1,7 @@
 
-
-2019年11月9日19:04:38 前端加入了login,register组件, 但是代码的html还有一些被注释掉
+## go后端
+- 使用的包
+	- github.com/astaxie/beego/logs		// 用于日志输出
+	- github.com/dgrijalva/jwt-go		// 用于生成token
+	- github.com/go-ini/ini				// 用于生成配置
+	- github.com/lib/pq					// 用于操作postgres数据库

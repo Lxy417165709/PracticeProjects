@@ -95,7 +95,7 @@ export class HomeComponent implements OnInit {
         this.toast.error(res.msg, '提示');
         this.router.navigate(['login']);
       }
-      console.log(this.common.replyProto);
+      // console.log(this.common.replyProto);
     });
   }
 }

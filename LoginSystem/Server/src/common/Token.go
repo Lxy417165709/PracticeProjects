@@ -1,12 +1,12 @@
 package common
 
 import (
+	"env"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"time"
 )
 
-var tokenKey = "123456"
 
 type jwtUserClaims struct {
 	jwt.StandardClaims
@@ -27,7 +27,7 @@ func GenerateTokenString(userId int64) (tokenString string, err error) {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 
 	// 生成token字符串
-	tokenString, err = token.SignedString([]byte(tokenKey))
+	tokenString, err = token.SignedString([]byte(env.Conf.Server.TokenKey))
 	if err != nil {
 		return tokenString, err
 	}
@@ -39,7 +39,7 @@ func ParseTokenString(tokenString string) (claims jwt.Claims, err error) {
 
 	// 解析token字符串
 	token, err := jwt.Parse(tokenString, func(*jwt.Token) (interface{}, error) {
-		return []byte(tokenKey), nil
+		return []byte(env.Conf.Server.TokenKey), nil
 	})
 	if err != nil {
 		return claims, err

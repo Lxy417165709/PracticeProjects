@@ -104,7 +104,7 @@ export class LoginComponent implements OnInit {
     this.http.post('/server/login', this.common.reqProto, requestHead).subscribe((res: any) => {
       // 返回逻辑还没写
       this.common.replyProto = res;
-      console.log(this.common.replyProto);
+      // console.log(this.common.replyProto);
 
       // 根据登录结果相应操作
       if (this.common.replyProto.status === 0) {

@@ -7,7 +7,7 @@
     height: 50%;
     min-height: 370px;
     width: 30%;
-    min-width: 300px;
+    min-width: 500px;
     background-color: #ffffff;
     position: absolute;
     top:0;
@@ -105,7 +105,7 @@
 }
 
 .windowLogin .buttonGoToRegister{
- 
+
     border-radius: 0 0 10px 10px;
     background-color: #ff6666;
     font-weight: bolder;

@@ -9,7 +9,8 @@ import (
 )
 
 var Cfg *ini.File
-func LoadConf(confPath string) error{
+
+func LoadConf(confPath string) error {
 	if confPath == "" {
 		err := fmt.Errorf("configure file path should not be blank")
 		logs.Error(err)
@@ -30,10 +31,11 @@ func LoadConf(confPath string) error{
 	}
 	return nil
 }
+
 type Configure struct {
 	Common struct {
-		Version   string `json:"version" remark:"软件发布版本，对应仓库tag版本"`
-		Creator  string  `json:"creator" remark:"创建者"`
+		Version string `json:"version" remark:"软件发布版本，对应仓库tag版本"`
+		Creator string `json:"creator" remark:"创建者"`
 	}
 	Db struct {
 		Host     string `json:"host" remark:"数据库主机"`
@@ -45,7 +47,8 @@ type Configure struct {
 	}
 	Server struct {
 		Port     int    `json:"port" remark:"服务器监听端口"`
-		Filepath string  `json:"filepath" remark:"服务器默认文件路径"`
+		Filepath string `json:"filepath" remark:"服务器默认文件路径"`
+		TokenKey string `json:"tokenKey" remark:"token加密密钥"`
 	}
 }
 

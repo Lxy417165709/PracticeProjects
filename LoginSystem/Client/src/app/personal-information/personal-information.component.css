@@ -8,7 +8,7 @@
     margin: auto;
     position: absolute;
     width: 32%;
-    min-width: 400px;
+    min-width: 500px;
     height: 50%;
     min-height: 500px;
     box-shadow: 0 0 30px 0 black;
@@ -100,7 +100,15 @@
 
 .selfInfoWindow .option button{
     font-size: 1.5em;
-    width: 70%;
+    width: 50%;
+    height: 50px;
+    color: white;
+    background-color: #ff6666;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    box-shadow: black 0 0 10px;
+    cursor: pointer;
 }
 
 app-picture-upload-tool{
