@@ -9,7 +9,7 @@ import (
 func UserPhotoToBase64Str(userPhoto string) (base64Str string,err error){
 
 	// 读取图片
-	bytes,err := ioutil.ReadFile(env.Conf.Server.Filepath + "/img/" + userPhoto)
+	bytes,err := ioutil.ReadFile(env.Conf.Server.Filepath + "img/" + userPhoto)
 	if err != nil {
 		return base64Str,err
 	}

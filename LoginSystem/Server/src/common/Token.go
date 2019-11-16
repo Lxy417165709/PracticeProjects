@@ -17,6 +17,7 @@ type jwtUserClaims struct {
 // expiresTime是过期时间,单位是毫秒,从现在开始算起
 func GenerateTokenString(userId int64) (tokenString string, err error) {
 	// 创建加密的token对象
+
 	claims := &jwtUserClaims{
 		jwt.StandardClaims{
 			ExpiresAt: int64(time.Now().Add(time.Hour * 72).Unix()),

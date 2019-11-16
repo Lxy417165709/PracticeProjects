@@ -36,5 +36,14 @@
 
 10. http同步问题，还有用户头像的获取问题..
 
+11. 部署的时候，把部署文件夹改为“远程部署”,
+	然后docker-compose up的时候会
+	ERROR: no such image: _golang: invalid reference format
+	但是改了文件夹名后，比如"远程部署A",之后就不会...
+	猜想: 可能是操作过程中留下了缓存...导致出现这样的错误
+	
+12 golang      | 2019/11/16 08:27:31.713 [E] [log.go:604]  open assets//img/1573892509060_1.jpg: no such file or directory
+
+
 
 11. 前端要限制文件上传大小
