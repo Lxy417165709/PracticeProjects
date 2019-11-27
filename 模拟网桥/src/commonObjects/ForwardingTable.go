@@ -34,8 +34,13 @@ func NewForwardingTable(netCount int) *ForwardingTable {
 // 插入帧
 // 第一个参数是MAC地址，第二个参数是其所对应的网络号
 func (f *ForwardingTable) Insert(MAC string, netNumber int) {
+	// 不存在才插入MACSet
+	if f.getNetNumber(MAC) == -1 {
+		f.MACSet[netNumber] = append(f.MACSet[netNumber],MAC)
+	}
+
 	f.netMACMap[MAC] = netNumber
-	f.MACSet[netNumber] = append(f.MACSet[netNumber],MAC)
+
 }
 
 // 查询MAC属于哪个网络，-1 表示还没存在

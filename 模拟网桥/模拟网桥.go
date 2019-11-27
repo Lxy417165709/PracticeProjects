@@ -8,8 +8,8 @@ import (
 
 const (
 	netCount = 5 	// 网桥连接的网络数
-	HostPerNet = 30		// 每一个网络拥有的MAC地址(即主机数)
-	frameCount = 100	// 每一个网络发送的帧的数量
+	HostPerNet = 5		// 每一个网络拥有的MAC地址(即主机数)
+	frameCount = 10	// 每一个网络发送的帧的数量
 	messageMinLen = 10	// 消息的最短长度
 	messageMaxLen = 20	// 消息的最长长度
 	fileNameFormatter = "Net-%d.txt" 	// 文件名字的规范
