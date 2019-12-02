@@ -57,7 +57,7 @@ func main() {
 				fmt.Printf("::	网络%d发送了一个到自己网络的帧。		(网桥不转发)\n", t)
 			}
 			if isToForwardFlag == -1 {
-				fmt.Printf("::	网络%d发送了一个到达未知网络的帧。		(网桥不转发)\n", t)
+				fmt.Printf("::	网络%d发送了一个到达未知网络的帧。		(网桥转发)\n", t)
 			}
 			if isToForwardFlag != -2 && isToForwardFlag != -1{
 				fmt.Printf("::	网络%d发送了一个到达网络%d的帧。		(网桥转发)\n", t, isToForwardFlag)
