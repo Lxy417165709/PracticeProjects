@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "C:\\sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
+    "C:\\sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "accelerometergraph-Debug-x86": {
+      "artifactName": "accelerometergraph",
+      "buildCommand": "C:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\.cxx\\cmake\\debug\\x86\" accelerometergraph",
+      "abi": "x86",
+      "output": "C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\build\\intermediates\\cmake\\debug\\obj\\x86\\libaccelerometergraph.so"
+    }
+  }
+}

@@ -1,5 +1,0 @@
-
-# 远程部署
-- docker-compose build		通过当前目录的docker-compose.yml构建docker容器
-- docker-compose up -d  	通过当前目录的docker-compose.yml构建docker容器并后台运行(-d参数表示后台运行)
-- docker rm $(docker ps -aq)	删除所有容器

@@ -1,0 +1,3 @@
+C:/Users/hasee/Desktop/GestureIdentify/accelerometer/.cxx/cmake/release/armeabi-v7a/CMakeFiles/accelerometergraph.dir
+C:/Users/hasee/Desktop/GestureIdentify/accelerometer/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/hasee/Desktop/GestureIdentify/accelerometer/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -32,11 +32,11 @@ public:
 	string name;			// 进程名 
 	int timeOfComming;		// 到达时间 
 	int timeOfExecuting;	// 运行时间
-	stateType state;		// 进程状态
+	char state;		// 进程状态
 	PCB* next;				// 链接指针 
 	
 public:
-	PCB(string name,int timeOfComming,int timeOfExecuting,stateType state,PCB* next){
+	PCB(string name,int timeOfComming,int timeOfExecuting,char state,PCB* next){
 		this->name = name;
 		this->timeOfComming = timeOfComming;
 		this->timeOfExecuting = timeOfExecuting;
@@ -56,11 +56,20 @@ public:
 		printf("\t\t| 进程名: %s\n",name.data());
 		printf("\t\t| 到达时间: %d\n",timeOfComming);
 		printf("\t\t| 剩余运行时间: %d\n",timeOfExecuting);
-		//printf("\t| 进程状态: %d\n",state);
+		printf("\t\t| 进程状态: %c\n",state);
 		printf("\t\t------------------\n");
 		
 	}
 	
+	void finish(){
+		this->state = 'C';
+	}
+	void run(){
+		this->state = 'R';
+	}
+	void wait(){
+		this->state = 'W';
+	}
 	
 };
 
@@ -78,7 +87,7 @@ public:
 	}
 	
 	ListOfPCB(){
-		this->dummyHead = new PCB("",-1,-1,WAITING,NULL); 
+		this->dummyHead = new PCB("",-1,-1,'W',NULL); 
 		this->tail = this->dummyHead;
 		this->length = 0;
 	}
@@ -139,7 +148,7 @@ public:
 		return dummyHead->next;
 	}
 	LoopListOfPCB(){
-		this->dummyHead = new PCB("",-1,-1,WAITING,NULL); 
+		this->dummyHead = new PCB("",-1,-1,'W',NULL); 
 		this->tail = this->dummyHead;
 		this->length = 0;
 	}
@@ -262,16 +271,17 @@ public:
 	 			if (runningPCB == NULL){
 					runningPCB = dispatchList.front();
 				}
-				runningPCB->state = RUNNING;
+				runningPCB->run();
 				runningPCB->timeOfExecuting--;
 				printf("\t\t进程(%s)成功运行1个时间单元。\n",runningPCB->name.data());
-
-				runningPCB->state = WAITING;
-				runningPCB = runningPCB->next;
+				runningPCB->wait();
 				
+				if (runningPCB->timeOfExecuting==0){
+					runningPCB->finish();
+				}
+				runningPCB = runningPCB->next;
 				// 删除已完成调度的进程 
 				while (dispatchList.size()!=0 && runningPCB->timeOfExecuting==0){
-					runningPCB->state = FINISHED;
 					dispatchList.remove(runningPCB);
 					printf("\t\t进程(%s)运行结束，已被剔除出调度队列。\n",runningPCB->name.data());
 					runningPCB = runningPCB->next;
@@ -292,7 +302,7 @@ public:
 	 
 	// 展示当前时间 
 	void showTime(){
-	 	printf("\n\t:: 当前时间: %d\n",currentTime);
+	 	printf("\n\n\n\t:: 当前时间: %d\n",currentTime);
 	}
 	// 展示进程调度链表 
 	void showListOfDispatching(){
@@ -355,7 +365,7 @@ int main(){
 			return 1;
 		}
 		
-		PCB* p = new PCB(name,commingTime,executingTime,WAITING,NULL);
+		PCB* p = new PCB(name,commingTime,executingTime,'W',NULL);
 		system.addProcess(p);
 	}
 	printf("系统初始化成功！ \n");

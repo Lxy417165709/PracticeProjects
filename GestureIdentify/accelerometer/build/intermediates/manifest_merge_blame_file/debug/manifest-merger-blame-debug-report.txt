@@ -1,0 +1,71 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3/*
+4**
+5** Copyright 2009, The Android Open Source Project
+6**
+7** Licensed under the Apache License, Version 2.0 (the "License");
+8** you may not use this file except in compliance with the License.
+9** You may obtain a copy of the License at
+10**
+11**     http://www.apache.org/licenses/LICENSE-2.0
+12**
+13** Unless required by applicable law or agreed to in writing, software
+14** distributed under the License is distributed on an "AS IS" BASIS,
+15** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+16** See the License for the specific language governing permissions and
+17** limitations under the License.
+18*/
+19-->
+20<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+21    package="com.android.accelerometergraph" >
+22
+23    <uses-sdk
+24        android:minSdkVersion="16"
+24-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+25        android:targetSdkVersion="28" />
+25-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+26
+27    <uses-feature
+27-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:40:5-42:35
+28        android:glEsVersion="0x00020000"
+28-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:41:9-41
+29        android:required="true" />
+29-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:42:9-32
+30
+31    <application
+31-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:23:5-39:19
+32        android:allowBackup="false"
+32-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:24:9-36
+33        android:debuggable="true"
+34        android:fullBackupContent="false"
+34-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:25:9-42
+35        android:icon="@mipmap/ic_launcher"
+35-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:26:9-43
+36        android:label="@string/accelerometergraph_activity"
+36-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:27:9-60
+37        android:testOnly="true" >
+38        <activity
+38-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:28:9-37:20
+39            android:name="com.android.accelerometergraph.MainActivity"
+39-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:29:13-41
+40            android:configChanges="orientation|keyboardHidden"
+40-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:30:13-63
+41            android:launchMode="singleTask"
+41-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:31:13-44
+42            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+42-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:32:13-71
+43            <intent-filter>
+43-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:33:13-36:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:34:17-69
+44-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:34:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:35:17-77
+46-->C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:35:27-74
+47            </intent-filter>
+48        </activity>
+49    </application>
+50
+51</manifest>

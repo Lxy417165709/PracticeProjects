@@ -1,0 +1,4 @@
+#Sun Apr 19 17:45:08 CST 2020
+base.0=C\:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

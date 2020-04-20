@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GestureIdentify.iml" filepath="$PROJECT_DIR$/GestureIdentify.iml" group="GestureIdentify" />
+      <module fileurl="file://$PROJECT_DIR$/accelerometer/accelerometer.iml" filepath="$PROJECT_DIR$/accelerometer/accelerometer.iml" group="GestureIdentify/accelerometer" />
+    </modules>
+  </component>
+</project>

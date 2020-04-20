@@ -1,0 +1,61 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:20:1-43:12
+INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:20:1-43:12
+INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:20:1-43:12
+	package
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:21:5-45
+		INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:20:11-69
+application
+ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:23:5-39:19
+	android:label
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:27:9-60
+	android:fullBackupContent
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:25:9-42
+	android:icon
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:26:9-43
+	android:allowBackup
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:24:9-36
+activity#com.android.accelerometergraph.MainActivity
+ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:28:9-37:20
+	android:launchMode
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:31:13-44
+	android:configChanges
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:30:13-63
+	android:theme
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:32:13-71
+	android:name
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:33:13-36:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:35:27-74
+uses-feature#0x00020000
+ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:40:5-42:35
+	android:glEsVersion
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:41:9-41
+	android:required
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml:42:9-32
+uses-sdk
+INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+		ADDED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hasee\Desktop\GestureIdentify\accelerometer\src\main\AndroidManifest.xml

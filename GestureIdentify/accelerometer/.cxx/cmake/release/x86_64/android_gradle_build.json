@@ -1,0 +1,42 @@
+{
+  "stringTable": {
+    "0": "C:/Users/hasee/Desktop/GestureIdentify/accelerometer/.cxx/cmake/release/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Daccelerometergraph_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -std=c++11 -Wall -Werror -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "C:\\sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
+    "C:\\sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\.cxx\\cmake\\release\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "C:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\.cxx\\cmake\\release\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "accelerometergraph-Release-x86_64": {
+      "buildCommand": "C:\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\.cxx\\cmake\\release\\x86_64\" accelerometergraph",
+      "buildType": "release",
+      "toolchain": "2814548028",
+      "abi": "x86_64",
+      "artifactName": "accelerometergraph",
+      "files": [
+        {
+          "src": "C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\src\\main\\cpp\\sensorgraph.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\hasee\\Desktop\\GestureIdentify\\accelerometer\\build\\intermediates\\cmake\\release\\obj\\x86_64\\libaccelerometergraph.so"
+    }
+  },
+  "toolchains": {
+    "2814548028": {
+      "cppCompilerExecutable": "C:\\sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
